@@ -1,0 +1,474 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 0;
+}
+
+header {
+  background-color: #212529;
+  padding: 20px 0;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+header nav a {
+  margin-right: 25px;
+  font-size: 23px;
+  padding: 10px;
+}
+header nav :hover {
+  color: #ffc800;
+  cursor: pointer;
+}
+header .box {
+  border: 1px solid #5f5e5e;
+  padding: 12px;
+  border-radius: 7px;
+}
+header .box h1 {
+  color: #929090;
+  font-size: 25px;
+  margin-right: 10px;
+}
+header .box .icon {
+  font-size: 25px;
+  color: #929090;
+}
+@media screen and (max-width: 1205px) {
+  header nav {
+    display: none;
+  }
+  header .box {
+    display: block;
+  }
+}
+@media screen and (min-width: 1205px) {
+  header nav {
+    display: block;
+  }
+  header .box {
+    display: none;
+  }
+  header .box h1, header .box .icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .imgbox {
+    width: 180px;
+  }
+  header .box {
+    padding: 10px;
+  }
+  header .box .icon, header .box h1 {
+    font-size: 10px;
+  }
+}
+
+#nice {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("assets/header-bg.jpg");
+  height: 1020px;
+}
+#nice .box {
+  height: 128vh;
+}
+#nice .textbox h1, #nice .textbox h2, #nice .textbox h3 {
+  color: #fff;
+}
+#nice .textbox h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+#nice .textbox h1 {
+  font-weight: 700;
+  font-size: 70px;
+  margin: 47px 0 54px 0;
+}
+#nice .textbox .btn {
+  background-color: #ffd607;
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 50px;
+}
+#nice .textbox .btn:hover h3 {
+  cursor: pointer;
+}
+@media screen and (max-width: 748px) {
+  #nice .box .textbox h1 {
+    font-size: 60px;
+  }
+  #nice .box .textbox h3 {
+    font-size: 46px;
+  }
+  #nice .box .textbox h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 430px) {
+  #nice .box .textbox h1 {
+    font-size: 90px;
+  }
+}
+
+#services h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 39px;
+}
+#services h3 {
+  font-size: 26px;
+  color: #6c757d;
+  margin: 30px 0 50px;
+}
+#services h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+#services h4 {
+  font-size: 20px;
+  color: #6c757d;
+  margin: 30px 0;
+  line-height: 1.7;
+}
+#services .icon {
+  font-size: 80px;
+}
+#services .icon i {
+  color: #fff;
+  background-color: #eec305;
+  padding: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1198px) {
+  #services h1 {
+    font-size: 58px;
+  }
+  #services h2 {
+    font-size: 35px;
+  }
+  #services h3 {
+    font-size: 23px;
+  }
+  #services h4 {
+    font-size: 25px;
+  }
+}
+@media screen and (min: width 512px) {
+  #services h1 {
+    font-size: 45px;
+  }
+  #services h2 {
+    font-size: 25px;
+  }
+  #services h3 {
+    font-size: 30px;
+  }
+  #services h4 {
+    font-size: 23px;
+  }
+}
+
+#portfolio {
+  background-color: #f5f5f5;
+  padding: 95px;
+}
+#portfolio h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#portfolio h4 {
+  font-size: 20px;
+  color: #747171;
+  margin: 23px 0 65px 0;
+}
+#portfolio .textbox {
+  margin: 20px 0;
+}
+#portfolio .textbox h2 {
+  font-weight: 600;
+  font-size: 35px;
+}
+#portfolio .textbox h3 {
+  font-size: 26px;
+  color: #838080;
+  margin: 14px 12px 60px 12px;
+}
+#portfolio .imgbox {
+  position: relative;
+  z-index: 1;
+}
+#portfolio .icon {
+  background-color: #eec305;
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 60px;
+  top: 0;
+}
+#portfolio .icon:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+@media screen and (max-width: 568px) {
+  #portfolio h1 {
+    font-size: 35px;
+  }
+  #portfolio .textbox h2 {
+    font-size: 26px;
+  }
+  #portfolio .textbox h3 {
+    font-size: 22px;
+  }
+}
+
+#about {
+  padding: 100px 0;
+}
+#about h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#about h3 {
+  color: #6c757d;
+  font-size: 28px;
+  margin: 20px 0 30px;
+}
+#about .imgbox {
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  width: 195px;
+  margin: 0 -5px;
+}
+#about .textbox {
+  width: 43%;
+}
+#about .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px 0;
+}
+#about .textbox h4 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #6c757d;
+}
+#about .txtright {
+  text-align: right;
+  padding-right: 40px;
+}
+#about .txtleft {
+  padding-left: 40px;
+}
+#about .btnbox {
+  display: flex;
+  justify-content: center;
+}
+#about .btnbox .btn {
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  padding: 32px 54px;
+  color: #fff;
+  background-color: #ffc800;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#team {
+  background-color: #f7f7f7;
+  padding: 80px;
+}
+#team h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#team h4 {
+  font-size: 18px;
+  color: #888383;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+#team .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: -36px;
+}
+#team .textbox h3 {
+  font-size: 20px;
+  color: #999595;
+  margin: 10px 0 13px 0;
+}
+#team .textbox ul {
+  display: flex;
+  justify-content: center;
+}
+#team .textbox ul li {
+  background-color: #080808;
+  color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  margin: 10px;
+  padding: 17px 35px 30px 16px;
+  width: 20px;
+}
+#team .textbox ul li:hover {
+  cursor: pointer;
+}
+#team .imgbox {
+  margin: 67px;
+  border-radius: 249px;
+}
+#team h5 {
+  color: #858080;
+  font-size: 35px;
+  margin-top: 72px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 756px) {
+  #team h5 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 570px) {
+  #team {
+    font-size: 40px;
+  }
+}
+
+#ibm .imgbox {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#ibm .microsoft {
+  width: 208px;
+  margin: 70px;
+}
+#ibm .google {
+  width: 160px;
+  margin: 67px;
+}
+#ibm .facebook {
+  width: 175px;
+  margin: 73px;
+}
+#ibm .ibm {
+  width: 124px;
+  margin: 73px;
+}
+@media screen and (max-width: 998px) {
+  #ibm .microsoft {
+    width: 170px;
+  }
+}
+#contact {
+  background-position: center;
+  background-size: cover;
+  background-color: #303030;
+  background-image: url(assets/map-image.png);
+}
+#contact h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin: 64px;
+}
+#contact h3 {
+  color: #777474;
+  font-size: 30px;
+  font-weight: 500;
+  margin: -50px 0 58px;
+}
+#contact .add input {
+  border: 2px solid #808080;
+  color: #807b7b;
+  font-size: 14px;
+  margin: 4px 0 19px 27px;
+  width: 558px;
+  height: 72px;
+}
+#contact textarea {
+  padding: 16px;
+  border: 2px solid #808080;
+  margin-left: -56px;
+}
+#contact .btn {
+  background-color: #eec305;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 20px;
+  margin-top: 19px;
+  padding: 28px 83px;
+}
+@media screen and (max-width: 983px) {
+  #contact .add input {
+    width: 130%;
+    margin-left: -110px;
+  }
+  #contact textarea {
+    width: 140%;
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 494px) {
+  #contact .add input {
+    width: 100%;
+    margin-left: -4px;
+  }
+  #contact textarea {
+    width: 100%;
+    margin-left: -4px;
+  }
+}
+
+footer h3 {
+  margin-top: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  background-color: #080808;
+  color: #fff;
+  border-radius: 39px;
+  width: 40px;
+  height: 42px;
+  margin: 37px 10px;
+}
+footer ul li .icon {
+  margin: 13px;
+}
+footer h4 {
+  margin: 45px 0 0 135px;
+}
+footer h5 {
+  display: flex;
+  justify-content: flex-end;
+  margin: -15px 65px 0 0;
+}
+@media screen and (max-width: 782px) {
+  footer h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
