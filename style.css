@@ -256,7 +256,7 @@ header .box .icon {
   border: 7px solid #e9ecef;
   border-radius: 50%;
   width: 195px;
-  margin: 0 -5px;
+  margin: 0 -5px 187px;
 }
 #about .textbox {
   width: 43%;
@@ -290,6 +290,15 @@ header .box .icon {
   background-color: #ffc800;
   font-size: 24px;
   font-weight: 700;
+}
+@media screen and (max-width: 884px) {
+  #about h4 {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  #about .imgbox {
+    margin: 0px -1px 10px;
+  }
 }
 
 #team {
@@ -326,7 +335,7 @@ header .box .icon {
   border-radius: 50%;
   height: 40px;
   margin: 10px;
-  padding: 17px 35px 30px 16px;
+  padding: 12px 49px 46px 17px;
   width: 20px;
 }
 #team .textbox ul li:hover {
@@ -458,17 +467,17 @@ footer ul li .icon {
   margin: 13px;
 }
 footer h4 {
-  margin: 45px 0 0 135px;
+  margin: 64px -30px -16px;
 }
 footer h5 {
   display: flex;
   justify-content: flex-end;
   margin: -15px 65px 0 0;
 }
-@media screen and (max-width: 782px) {
-  footer h3 {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-right: 10px;
+@media screen and (max-width: 752px) {
+  footer h4, footer h5 {
+    margin: -15px 0 -15px -104px;
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
