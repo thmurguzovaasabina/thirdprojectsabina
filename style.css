@@ -58,6 +58,7 @@ header .box .icon {
   }
   header .box {
     display: none;
+    position: absolute;
   }
   header .box h1, header .box .icon {
     display: none;
@@ -291,13 +292,10 @@ header .box .icon {
   font-size: 24px;
   font-weight: 700;
 }
-@media screen and (max-width: 884px) {
-  #about h4 {
-    font-size: 10px;
-    line-height: 1.8;
-  }
-  #about .imgbox {
-    margin: 0px -1px 10px;
+@media screen and (min-width: 661px) {
+  #about .textbox {
+    text-align: left;
+    width: 600px;
   }
 }
 
@@ -362,32 +360,27 @@ header .box .icon {
   }
 }
 
-#ibm .imgbox {
-  margin: 20px;
-  display: flex;
-  justify-content: space-between;
-}
 #ibm .microsoft {
   width: 208px;
-  margin: 70px;
 }
 #ibm .google {
   width: 160px;
-  margin: 67px;
 }
 #ibm .facebook {
   width: 175px;
-  margin: 73px;
 }
 #ibm .ibm {
   width: 124px;
-  margin: 73px;
 }
-@media screen and (max-width: 998px) {
-  #ibm .microsoft {
-    width: 170px;
+#ibm .imgbox img:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1016px) {
+  #ibm .imgbox {
+    margin: 15px;
   }
 }
+
 #contact {
   background-position: center;
   background-size: cover;
@@ -448,36 +441,50 @@ header .box .icon {
   }
 }
 
-footer h3 {
-  margin-top: 50px;
+footer {
+  padding: 10px 0;
+}
+footer h1, footer h2, footer h3 {
+  font-size: 18px;
+  color: #212529;
+  cursor: pointer;
+}
+footer h1 {
+  margin: 20px 0 10px 10px;
+}
+footer h2, footer h3 {
+  display: inline-block;
+  margin: 5px 0 20px 10px;
+}
+footer h4 {
+  margin: 26px -102px -16px 3px;
+}
+footer h5 {
+  display: flex;
+  justify-content: flex-end;
 }
 footer ul {
   display: flex;
   justify-content: center;
 }
 footer ul li {
-  background-color: #080808;
-  color: #fff;
-  border-radius: 39px;
-  width: 40px;
-  height: 42px;
-  margin: 37px 10px;
+  margin: 10px;
 }
 footer ul li .icon {
-  margin: 13px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 13px;
+  width: 41px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 18px;
 }
-footer h4 {
-  margin: 64px -30px -16px;
+footer ul li .icon i {
+  cursor: pointer;
 }
-footer h5 {
-  display: flex;
-  justify-content: flex-end;
-  margin: -15px 65px 0 0;
-}
-@media screen and (max-width: 752px) {
-  footer h4, footer h5 {
-    margin: -15px 0 -15px -104px;
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: 726px) {
+  footer h2, footer h3 {
+    margin: 10px 0 10px 10px;
   }
 }/*# sourceMappingURL=style.css.map */
