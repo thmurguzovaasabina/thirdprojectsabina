@@ -297,63 +297,77 @@ header .box .icon {
 
 #team {
   background-color: #f7f7f7;
-  padding: 80px;
 }
 #team h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 60px;
 }
-#team h4 {
+#team h3 {
   font-size: 18px;
-  color: #888383;
-  margin-top: 35px;
-  margin-bottom: 5px;
-}
-#team .textbox h2 {
-  font-weight: 700;
-  font-size: 30px;
-  margin-top: -36px;
-}
-#team .textbox h3 {
   font-size: 20px;
-  color: #999595;
-  margin: 10px 0 13px 0;
-}
-#team .textbox ul {
-  display: flex;
-  justify-content: center;
-}
-#team .textbox ul li {
-  background-color: #080808;
-  color: #fff;
-  border-radius: 50%;
-  height: 40px;
-  margin: 10px;
-  padding: 9px 45px 45px 16px;
-  width: 35px;
-}
-#team .textbox ul li:hover {
-  cursor: pointer;
+  color: #888383;
+  margin: 22px 0 57px;
 }
 #team .imgbox {
   margin: 67px;
   border-radius: 249px;
 }
+#team .textbox {
+  text-align: center;
+}
+#team .textbox h2 {
+  font-weight: 700;
+  font-size: 46px;
+  margin-top: 25px;
+}
+#team .textbox h4 {
+  margin: 19px 0;
+}
+#team h4, #team h5 {
+  font-size: 30px;
+  color: #999595;
+}
+#team ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#team ul li {
+  background-color: #080808;
+  color: #fff;
+  border-radius: 52%;
+  margin: 10px;
+  padding: 16px 19px;
+}
+#team li:hover, #team i:hover {
+  cursor: pointer;
+}
 #team h5 {
-  color: #858080;
-  font-size: 35px;
-  margin-top: 72px;
-  line-height: 1.2;
+  margin: 15px 72px;
 }
-@media screen and (min-width: 668px) {
-  #team h2 {
-    font-weight: 700;
-    font-size: 40px;
+@media screen and (max-width: 929px) {
+  #team h3, #team h4, #team h5 {
+    font-size: 26px;
   }
-  #team h3 {
-    font-size: 20px;
+  #team h1 {
+    font-size: 39px;
+  }
+  #team .textbox h2 {
+    font-size: 32px;
+  }
+  #team .imgbox {
+    width: 250px;
   }
 }
+@media screen and (min-width: 758px) {
+  #team h5 {
+    font-size: 30px;
+  }
+  #team .imgbox {
+    width: 270px;
+  }
+}
+
 #ibm .microsoft {
   width: 208px;
 }
